@@ -48,10 +48,4 @@ a { text-decoration: none; }
     -moz-box-sizing:border-box;-webkit-box-sizing:border-box;
     border:0 solid white;
     pointer-events:none;
-    animation: grow 0.7s ease-in-out 0s forwards;
-}
-  
-@keyframes grow {
-    from { border-width: 0; }
-    to { border-width: 25px; }
 }
