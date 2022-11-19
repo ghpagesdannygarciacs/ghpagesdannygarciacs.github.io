@@ -1,4 +1,4 @@
-
+/* Introduction */
 #intro_transition {
   position: fixed;
   z-index: 100;
@@ -14,8 +14,9 @@
 }
 
 #intro_message {
-  font-size: 150px;
+  font-size: 125px;
   color: white;
+  font-weight: bold;
 }
 
 #intro_message p {
@@ -35,4 +36,78 @@
 @keyframes welcome_animation {
   from { color: transparent; }
   to { color: white; }
+}
+
+/* Navigation */
+nav {
+  top: -5em;
+  width: 100%;
+  z-index: 102;
+  position: fixed;
+  background-color: white;
+  animation: slide_down 1s ease-in-out 4s forwards;
+}
+
+@keyframes slide_down {
+  from { top: -80px; }
+  to { top: 0; }
+}
+
+#navbar {
+  max-width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar a {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+#navbar img {
+  max-height: 40px;
+  width: auto;
+  margin: 8px;
+}
+
+#navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+#navbar li {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+#selected {
+  color: #5f73e7 !important;
+  font-weight: bold;
+}
+
+a.nav_button {
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 5px;
+  color: #5f73e7;
+  border: 2px solid #5f73e7;
+  transition: background-color 0.2s ease-in;
+  font-weight: bold;
+}
+
+a.nav_button:hover {
+  transition: background-color 0.2s ease-in;
+  background-color: #e8dcf8;
+}
+
+/* Home section */
+#home {
+  height: calc(100% + 8em);
+  background-color: #e4f2fa;
 }

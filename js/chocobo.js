@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Camera
     const camera = new THREE.PerspectiveCamera(75, threeElement.offsetWidth / threeElement.offsetHeight, 0.1, 1000);
     camera.position.set(0, 0.5, 2.2);
-    
+
     // Renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true, canvas: document.getElementById("element"), alpha:true });
     renderer.setSize(threeElement.offsetWidth, threeElement.offsetHeight);
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
             y: backdropY + mouseY / 6000,
             duration: 1
         })
-        
+
         // Rotates chocobo
         chocobo.rotation.z -= 0.0005;
 

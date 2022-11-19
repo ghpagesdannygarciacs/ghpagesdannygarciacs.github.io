@@ -27,7 +27,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/css_main.css">
     <link rel="stylesheet" href="css/css_index.css">
-    
+
 </head>
 <body>
 
@@ -53,29 +53,29 @@
 
     <!-- Website's navbar -->
     <nav>
-        <div class="navbar">
+        <div id="navbar">
 
             <!-- Navbar left-hand -->
-            <a class="navbar left unselectable" href="">
-                <img class="navbar" src="images/logo.webp" alt="Website logo">
+            <a class="unselectable" href="">
+                <img src="images/logo.webp" alt="Website logo">
             </a>
 
             <!-- Navbar right-hand -->
             <ul class="navbar unselectable">
-                <li class="navbar"><a class="navbar selected right" href="#">Home</a></li>
-                <li class="navbar"><a class="navbar right" href="#">About</a></li>
-                <li class="navbar"><a class="navbar right" href="#">Work</a></li>
-                <li class="navbar"><a class="navbar right" href="#">Contact</a></li>
+                <li><a id="selected" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li> 
+                <li><a href="#">Contact</a></li>
 
-                <li class="navbar"><a class="nav_button" href="#" >Resume</a></li>
-                <li class="navbar last"><a class="nav_button" href="https://github.com/DannyGarciaCS">GitHub</a></li>
+                <li><a class="nav_button" href="#" >Resume</a></li>
+                <li><a class="nav_button" href="https://github.com/DannyGarciaCS">GitHub</a></li>
             </ul>
 
         </div>
     </nav>
 
     <!-- Home section -->
-    <section class="home main_container">
+    <section id="home" class="main_container">
 
         <!-- Main section content -->
         <div>
@@ -97,7 +97,7 @@
 
             <a>⮟ SCROLL</a>
         </div>
-        
+
         <div class="transition_ltd"></div>
 
     </section>
