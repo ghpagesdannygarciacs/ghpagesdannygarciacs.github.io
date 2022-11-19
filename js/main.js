@@ -15,13 +15,3 @@ function disableScroll() {
   }
   
   //disableScroll()
-  
-  const logo = document.querySelectorAll("path");
-  
-  for(let i = 0; i<logo.length; i++) {
-    logo[i].style.strokeDasharray = logo[i].getTotalLength();
-    logo[i].style.strokeDashoffset = logo[i].getTotalLength();
-    logo[i].style.animationPlayState.display = "block";
-    logo[i].style.animationPlayState = "running";
-  }
-  
