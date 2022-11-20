@@ -6,12 +6,12 @@ function disableScroll() {
     window.addEventListener('keydown', preventDefaultForScrollKeys, false);
 }
 
-  // Enables scrolling
-  function enableScroll() {
+// Enables scrolling
+function enableScroll() {
     window.removeEventListener('DOMMouseScroll', preventDefault, false);
     window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
     window.removeEventListener('touchmove', preventDefault, wheelOpt);
     window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
 }
 
-  //disableScroll()
+//disableScroll()
