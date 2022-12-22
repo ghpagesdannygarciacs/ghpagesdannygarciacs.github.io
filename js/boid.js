@@ -51,10 +51,7 @@ class Boid {
                     directions[1].add(boid.position);
                     directions[2].add(p5.Vector.sub(this.position, boid.position).div(distance * distance));
                     count += 1;
-
-                    // Highlights visible boids if current is primary and limits comparisons for performance
-                    if(this.primary && this.highlight) { boid.secondary = true; }
-                    if(!this.accurate && count > 8) { break; }
+                    if(count > 6) { break; }
                 }
             }
         }

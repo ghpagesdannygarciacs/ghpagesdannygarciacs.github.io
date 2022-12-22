@@ -9,7 +9,7 @@ function setup() {
     canvas.parent(parent);
 
     // Initial boid population
-    for(let i=0; i<250; i++){ boids.push(new Boid(width, height)); }
+    for(let i=0; i<175; i++){ boids.push(new Boid(width, height)); }
 
 }
 
