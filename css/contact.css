@@ -1,12 +1,11 @@
 body {
-    font-family: Epilogue, Cabin, Oxygen, Arial, Helvetica, sans-serif;
+    font-family: Cabin, Epilogue, Oxygen, Arial, Helvetica, sans-serif;
     color: #3345b1;
 }
 #contactH1 {
-    font-weight: 800;
-    color: #3345b1;
-    text-align: center;
     margin: 0;
+    font-weight: bold;
+    text-align: center;
 }
 #contactH2 {
     margin: 0;
@@ -18,7 +17,6 @@ button {
     color: #3345b1;
     transition: background-color 0.2s ease-in;
 }
-
 button:hover {
     transition: background-color 0.2s ease-in;
     background-color: #cddaf7 !important;
@@ -27,19 +25,16 @@ button:hover {
 /* Landscape resolution */
 @media screen and (orientation:landscape) {
 
-    #contactH1 {
-        font-size: 10vh;
-    }
+    #contactH1 { font-size: 6vh; }
     #contactH2 {
         font-size: 2.5vh;
-        margin: 1.5vh 0;
+        margin-bottom: 2.5vh;
     }
     button {
-        height: 5vh;
-        margin: 2vh auto;
-        font-size: 2.2vh;
+        height: 6vh;
+        font-size: 2.5vh;
         border: 0.3vh solid #3345b1;
-        border-radius: 5vh;
+        border-radius: 1.5vh;
     }
 
 }
@@ -47,19 +42,16 @@ button:hover {
 /* Portrait resolution */
 @media screen and (orientation:portrait) {
 
-    #contactH1 {
-        font-size: 10vw;
-    }
+    #contactH1 { font-size: 6vw; }
     #contactH2 {
         font-size: 3vw;
-        margin: 3vw 0;
+        margin-bottom: 3vw;
     }
     button {
-        height: 8vw;
-        margin: 1vh auto;
-        font-size: 3.5vw;
+        height: 7vw;
+        font-size: 2.5vw;
         border: 0.3vw solid #3345b1;
-        border-radius: 5vw;
+        border-radius: 2vw;
     }
 
 }
