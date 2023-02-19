@@ -11,18 +11,18 @@
     <meta name="author" content="Danny Garcia">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon/icon72.png">
+    <link rel="icon" type="image/png" href="visuals/favicon/icon72.png">
 
-    <link rel="icon" type="image/png" href="images/favicon/icon16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="images/favicon/icon32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="images/favicon/icon72.png" sizes="72x72">
-    <link rel="icon" type="image/png" href="images/favicon/icon96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="images/favicon/icon114.png" sizes="114x114">
-    <link rel="icon" type="image/png" href="images/favicon/icon152.png" sizes="152x152">
+    <link rel="icon" type="image/png" href="visuals/favicon/icon16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="visuals/favicon/icon32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="visuals/favicon/icon72.png" sizes="72x72">
+    <link rel="icon" type="image/png" href="visuals/favicon/icon96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="visuals/favicon/icon114.png" sizes="114x114">
+    <link rel="icon" type="image/png" href="visuals/favicon/icon152.png" sizes="152x152">
 
-    <link rel="apple-touch-icon" href="images/favicon/icon72.png" sizes="72x72">
-    <link rel="apple-touch-icon" href="images/favicon/icon114.png" sizes="114x114">
-    <link rel="apple-touch-icon" href="images/favicon/icon152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="visuals/favicon/icon72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="visuals/favicon/icon114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="visuals/favicon/icon152.png" sizes="152x152">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
@@ -33,15 +33,15 @@
 
     <!-- Website's navbar -->
     <nav>
-        <div id="navbar">
+        <div id="navbar" class="unhighlightable">
 
             <!-- Navbar left-hand -->
-            <a id="leftNav" class="unhighlightable" href="http://dannygarciacs.com/">
-                <img id="siteLogo" src="images/logo.webp" alt="Website logo">
+            <a class="leftNav" href="http://dannygarciacs.com/">
+                <img id="siteLogo" src="visuals/logo.webp" alt="Website logo">
             </a>
 
             <!-- Navbar right-hand -->
-            <ul id="headerTable" class="unhighlightable">
+            <ul id="headerTable">
                 <li class="headerRow"><a id="homeLink" class="rightNav" href="#home">Home</a></li>
                 <li class="headerRow"><a id="aboutLink" class="rightNav" href="#about">About</a></li>
                 <li class="headerRow"><a id="workLink" class="rightNav" href="#work">Work</a></li>
@@ -61,7 +61,7 @@
 
             <!-- Intro 3D canvas -->
             <div class="alignX cover">
-                <div id="canvas" class="alignY">
+                <div class="alignY">
                     <div id="canvasElement"><canvas id="element"></canvas></div>
                 </div>
             </div>
@@ -91,14 +91,15 @@
 
                 <!-- Main about section -->
                 <p class="sectionHeader spawn">About Me</p>
+
                 <div id="aboutBody" class="spawn">
 
                     <!-- About portrait image -->
                     <div id="aboutPortrait">
 
-                        <img alt="Decorative star" id="star" class="unselectable" src="images/star.webp" class="unselectable">
+                        <img alt="Decorative star" id="star" class="unselectable" src="visuals/star.webp" class="unselectable">
                         <div id="portraitOutline" class="unselectable"></div>
-                        <img id="portrait" src="images/portrait.webp" class="unselectable" alt="Photograph of Danny Garcia">
+                        <img id="portrait" src="visuals/portrait.webp" class="unselectable" alt="Photograph of Danny Garcia">
                         <div id="portraitOverlay" class="unhighlightable" style="opacity:0;"></div>
                     </div>
 
@@ -118,59 +119,65 @@
 
             </div>
 
-            <!-- Table of strong knowledge -->
-            <div class="usedTechnologies">
+            <div class="experienceTable">
 
                 <!-- Frontal logos -->
-                <img alt="Python logo" id="pythonLogo" class="frontalLogo unselectable" src="images/pythonLogo.webp" class="unselectable" >
-                <img alt="Java logo" id="javaLogo" class="frontalLogo unselectable" src="images/javaLogo.webp" class="unselectable">
+                <img alt="Python logo" id="pythonLogo" class="frontalLogo unselectable" src="visuals/pythonLogo.webp" class="unselectable" >
+                <img alt="Java logo" id="javaLogo" class="frontalLogo unselectable" src="visuals/javaLogo.webp" class="unselectable">
 
                 <!-- Rear logos -->
-                <img alt="Javascript logo" id="javascriptLogo" class="rearLogo unselectable" src="images/javascriptLogo.webp" class="unselectable">
-                <img alt="Kotlin logo" id="kotlinLogo" class="rearLogo unselectable" src="images/kotlinLogo.webp" class="unselectable">
+                <img alt="Javascript logo" id="javascriptLogo" class="rearLogo unselectable" src="visuals/javascriptLogo.webp" class="unselectable">
+                <img alt="Kotlin logo" id="kotlinLogo" class="rearLogo unselectable" src="visuals/kotlinLogo.webp" class="unselectable">
 
-                <table class="experienceTable spawn">
-                    <tr><td class="tableTitle" colspan="3">Strong Knowledge Of</td></tr>
+                <div class="tableBuffer">
 
-                    <tr class="tableRow">
-                        <td class="tableCol">▶ Python</td>
-                        <td class="tableCol" style="width:30%">▶ Java</td>
-                        <td class="tableCol" style="width:20%">▶ AI</td>
-                    </tr>
+                    <table class="experienceTable spawn">
+                        <tr><td class="tableTitle" colspan="3">Strong Knowledge Of</td></tr>
 
-                    <tr class="tableRow">
-                        <td class="tableCol">▶ HTML</td>
-                        <td class="tableCol" style="width:30%">▶ Javascipt</td>
-                        <td class="tableCol" style="width:20%">▶ CSS</td>
-                    </tr>
+                        <tr>
+                            <td class="tableCol">✔ Python</td>
+                            <td class="tableCol" style="width:30%">✔ Java</td>
+                            <td class="tableCol" style="width:20%">✔ AI</td>
+                        </tr>
 
-                    <tr class="tableRow">
-                        <td class="tableCol" style="width:20%">▶ Kotlin</td>
-                        <td class="tableCol" colspan="3">▶ Android Development</td>
-                    </tr>
-                    </table>
+                        <tr>
+                            <td class="tableCol">✔ HTML</td>
+                            <td class="tableCol" style="width:30%">✔ Javascipt</td>
+                            <td class="tableCol" style="width:20%">✔ CSS</td>
+                        </tr>
+
+                        <tr>
+                            <td class="tableCol" style="width:20%">✔ Kotlin</td>
+                            <td class="tableCol" colspan="3">✔ Android Development</td>
+                        </tr>
+                        </table>
+
+                </div>
             </div>
 
             <!-- Table separation -->
             <div class="tableSpacer"></div>
 
-            <!-- Table of strong knowledge -->
-            <div class="usedTechnologies">
-                <table class="experienceTable spawn">
-                    <tr><td class="tableTitle" colspan="3">Knowledgeable On</td></tr>
+            <div class="experienceTable">
+                <div class="tableBuffer">
 
-                    <tr class="tableRow">
-                        <td class="tableColShort">▶ SQL</td>
-                        <td class="tableColShort" style="width:20%">▶ Git</td>
-                        <td class="tableColShort" style="width:40%">▶ Swift</td>
-                    </tr>
+                    <table class="experienceTable spawn">
+                        <tr><td class="tableTitle" colspan="3">Knowledgeable On</td></tr>
+    
+                        <tr class="tableRow">
+                            <td class="tableCol">✔ SQL</td>
+                            <td class="tableCol" style="width:20%">✔ Git</td>
+                            <td class="tableCol" style="width:40%">✔ Swift</td>
+                        </tr>
+    
+                        <tr class="tableRow">
+                            <td class="tableCol" style="width:20%">✔ C++</td>
+                            <td class="tableCol" style="width:20%">✔ C#</td>
+                            <td class="tableCol" style="width:40%">✔ VR Development</td>
+                        </tr>
+                    </table>
 
-                    <tr class="tableRow">
-                        <td class="tableColShort" style="width:20%">▶ C++</td>
-                        <td class="tableColShort" style="width:20%">▶ C#</td>
-                        <td class="tableColShort" style="width:40%">▶ VR Development</td>
-                    </tr>
-                </table>
+                </div>
             </div>
 
             <!-- Footer section separation -->
@@ -180,168 +187,153 @@
         <div class="transition_dtl"></div>
     </section>
 
-    <!-- Work information section -->
+    <!-- Work section -->
     <section id="work" class="main_container">
         <div>
 
-            <p class="sectionHeader spawn">Some Personal Projects I've Built</p>
+            <p class="sectionHeader spawn">Some Personal Projects</p>
 
             <!-- Collection of projects -->
             <div id="workContainer">
-                <div id="workRow">
 
-                    <!-- JP visual project -->
-                    <div class="projectContainer spawn">
+                <!-- JP trainer project -->
+                <div class="spawn">
 
-                        <!-- Project sample -->
-                        <div class="rightHand">
-                            <div id="jpVisual" class="rightCard">
-                            </div>
+                    <div class="projectHeader">
+                        <p class="projectTitle">JP Trainer</p>
+                        <a href="https://github.com/DannyGarciaCS/JPTrainer">
+                            <img class="unselectable githubLink" src="visuals/gh.webp" alt="JP Trainer Github link">
+                        </a>
+                    </div>
+
+                    <div class="projectDetails">
+                        <div class="projectPreview">
+                            <div id="jpTrainerPreview" style="margin-left: 5vh;"></div>
                         </div>
-
-                        <!-- Left hand section of project -->
-                        <div class="leftHand">
-
-                            <!-- Project title and link -->
-                            <div class="leftHeader">
-                                <div class="headerRow">
-                                    <p class="projectTitle">JP Visual</p>
-                                    <a href="#">
-                                        <img class="unselectable githubProject" src="images/gh.webp" alt="Github Link">
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- Project description -->
-                            <div class="leftCard">
-                                <p class="projectDescription">JP Visual is a program that translates Japanese from any given image. The program uses an object
-                                detection algorithm to locate potential letters and translate them using Google Translate's python API. Knowing the input
-                                language cuts down on the potential mis-identifications and improves performance over similar more generic algorithms. This is
-                                a work in progress and can currently only identify Hiragana. I'm working on implementing Katakana and Kanjis, as well as an
-                                app that uses the algorithm.
-                                </p>
-                                <p class="projectDescription"><span class="cardTechnologies">Technologies Used:</span><br><br>Python, Temp, Temp</p>
-                            </div>
+                        <div class="projectDescriptionBox">
+                            <p class="projectDescription">
+                            JPTrainer is a program built to help beginners of the Japanese language practice writing
+                            foreign characters. You can use it to learn any combination of Hiragana, Katakana, or Kanji
+                            characters. The user is given random characters from the chosen subset which have to be
+                            drawn and submitted using the provided canvas. An AI model will then try to predict what
+                            the user is trying to draw in real-time displaying the current guess in a small window
+                            to the right of the canvas.
+                            </p>
                         </div>
                     </div>
 
-                    <!-- Boids project -->
-                    <div class="projectContainer spawn">
-
-                        <!-- Project sample -->
-                        <div class="rightHand">
-                            <div id="boidsCard" class="rightCard">
-                            </div>
-                        </div>
-
-                        <!-- Left hand section of project -->
-                        <div class="leftHand">
-
-                            <!-- Project title and link -->
-                            <div class="leftHeader">
-                                <div class="headerRow">
-                                    <p class="projectTitle">Boid Flock Emergent AI</p>
-                                    <a href="https://github.com/DannyGarciaCS/BoidFlockEmergentAI">
-                                        <img class="unselectable githubProject" src="images/gh.webp" alt="Github Link">
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- Project description -->
-                            <div class="leftCard">
-                                <p class="projectDescription">Algorithm that simulates on any given 2D environment the movement of birds, fish, and other
-                                natural flocking
-                                creatures through an emergent system (system that does not depend on its individual parts, but on their relationships to one
-                                another).
-                                The GitHub implementation allows for manual control and provides both visual and technical settings. For details on the mechanics,
-                                visit the project or see Craig Reynolds' paper called "Flocks, Herds, and Schools: A Distributed Behavioral Model" on
-                                which this work is based.</p>
-                                <p class="projectDescription"><span class="cardTechnologies">Technologies Used:</span><br><br>Javascript, HTML, CSS</p>
-                            </div>
-                        </div>
+                    <div class="projectTechnologies">
+                        <p class="projectTechnologiesHeader">Main Technologies Used:</p>
+                        <p class="projectTechnologiesBody">Python, Keras, Tensorflow</p>
                     </div>
-
-                    <!-- Sim Evo project -->
-                    <div class="projectContainer spawn">
-
-                        <!-- Project sample -->
-                        <div class="rightHand">
-                            <div id="simEvo" class="rightCard">
-                            </div>
-                        </div>
-
-                        <!-- Left hand section of project -->
-                        <div class="leftHand">
-
-                            <!-- Project title and link -->
-                            <div class="leftHeader">
-                                <div class="headerRow">
-                                    <p class="projectTitle">Sim Evo</p>
-                                    <a href="#">
-                                        <img class="unselectable githubProject" src="images/gh.webp" alt="Github Link">
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- Project description -->
-                            <div class="leftCard">
-                                <p class="projectDescription">Sim Evo simulates the evolutionary process in a 3D environment in which there are predators and
-                                pray. Members of each group are randomly generated with genetic differences that affect their ability to survive. With time,
-                                natural selection breeds new characteristics into the gene pool while removing ineffective ones. Over a long period of time,
-                                pray evolves *** and ***, while predators become *** and ***. For details on the implementation or statistics, please visit
-                                the GitHub link.
-                                </p>
-                                <p class="projectDescription"><span class="cardTechnologies">Technologies Used:</span><br><br>Java, OpenGL</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Market screener project -->
-                    <div class="projectContainer spawn">
-
-                        <!-- Project sample -->
-                        <div class="rightHand">
-                            <div id="marketScreener" class="rightCard">
-                            </div>
-                        </div>
-
-                        <!-- Left hand section of project -->
-                        <div class="leftHand">
-
-                            <!-- Project title and link -->
-                            <div class="leftHeader">
-                                <div class="headerRow">
-                                    <p class="projectTitle">Market Screener</p>
-                                    <a href="#">
-                                        <img class="unselectable githubProject" src="images/gh.webp" alt="Github Link">
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- Project description -->
-                            <div class="leftCard">
-                                <p class="projectDescription">Market Screener is a program that fetches and displays real-time market data along with a
-                                multitude of customizable analysis metrics. Furthermore, Market Screener has an inbuilt algorithm that predicts future market
-                                movements. Said algorithm uses price variations across different sectors to estimate changes in real time with statistically
-                                significant accuracy (30% - 80% depending on ticker and market volatility).
-                                </p>
-                                <p class="projectDescription"><span class="cardTechnologies">Technologies Used:</span><br><br>Python, Temp, Temp</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Footer section separation -->
-                    <div class="shortSpacer"></div>
-
                 </div>
+
+
+
+                <!-- Boid Flock project -->
+                <div class="spawn">
+
+                    <div class="projectHeader">
+                        <p class="projectTitle">Boid Flock Emergant AI</p>
+                        <a href="https://github.com/DannyGarciaCS/JPTrainer">
+                            <img class="unselectable githubLink" src="visuals/gh.webp" alt="Boid Flock Emergant AI Github link">
+                        </a>
+                    </div>
+
+                    <div class="projectDetails">
+                        <div class="projectPreview">
+                            <div id="boidFlockPreview" style="margin-left: 5vh;"></div>
+                        </div>
+                        <div class="projectDescriptionBox">
+                            <p class="projectDescription">
+                                Boid Flock Emergent AI is the implementation of a 2D flocking algorithm. It simulates
+                                the natural movement of birds, fish, or any other animals with similar behavior. This is
+                                done by controlling the intensity of 3 different forces: Alignment (which makes boids
+                                look toward the direction of neighbors), Cohesion (which makes boids move toward the
+                                center of the pack), and Separation (which makes the boids want to avoid one another).
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="projectTechnologies">
+                        <p class="projectTechnologiesHeader">Main Technologies Used:</p>
+                        <p class="projectTechnologiesBody">JavaScript, HTML, CSS, Java</p>
+                    </div>
+                </div>
+
+                <!-- Evolutionary Sim project -->
+                <div class="spawn">
+
+                    <div class="projectHeader">
+                        <p class="projectTitle">Evolutionary Sim (Preview)</p>
+                    </div>
+
+                    <div class="projectDetails">
+                        <div class="projectPreview">
+                            <div id="evolutionarySimPreview" style="margin-left: 5vh;"></div>
+                        </div>
+                        <div class="projectDescriptionBox">
+                            <p class="projectDescription">
+                                Project I'm currently working on. It is a randomly generated 3D environment with
+                                different animals who compete to survive. They attempt to find food and reproduce
+                                while trying to not starve or be eaten by predators. Each animal has genetic
+                                attributes such as speed and sight which must be balanced in order to not become
+                                extinct. Such genetic attributes are passed down from parents to their children in a way
+                                that mimics real-life evolution.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="projectTechnologies">
+                        <p class="projectTechnologiesHeader">Main Technologies Used:</p>
+                        <p class="projectTechnologiesBody">Python, OpenGL, Matplotlib</p>
+                    </div>
+                </div>
+
+                <p class="subprojectTitle">Other Projects:</p>
+
+                <div class="subproject">
+                    <p class="subprojectName">Satellite Image AI Processing</p>
+                    <p class="subprojectDescription">Algorithm that processed thousands of square miles of high quality
+                    satellite imagery and highlights specific sections of terrain and pinpoints specific targets.
+                    </p>
+                </div>
+
+                <div class="subproject">
+                    <p class="subprojectName">VR FSC campus navigation App</p>
+                    <p class="subprojectDescription">This was my Senior project at Florida Southern College.
+                    It was a VR app that allowed for the navigation of the FSC campus using a virtual 3D environment and 4k 360 images.
+                    </p>
+                </div>
+
+
+                <div class="subproject">
+                    <p class="subprojectName">Python graphics library</p>
+                    <p class="subprojectDescription">Simple graphics library parts of which where used on the previous projects.
+                    Allows for a functional approach to UI design and was originally written to help my brother learn to program.
+                    </p>
+                </div>
+
+                <div class="subproject">
+                    <p class="subprojectName">Maze search algorithm tester</p>
+                    <p class="subprojectDescription">An algorithm that generates mazes to test different search algorithms.
+                    You can compare the different paths and search durations to better determine which one better suites your project.
+                    </p>
+                </div>
+
+                
             </div>
         </div>
 
+        <!-- Footer section separation -->
+        <div class="shortSpacer"></div>
+        
         <!-- Section transition -->
         <div class="transition_ltd"></div>
+
     </section>
 
-    <!-- Contact me section -->
+    <!-- Contact section -->
     <section id="contact" class="main_container">
 
         <!-- Main section content -->
@@ -375,6 +367,7 @@
             <!-- Footer section separation -->
             <div class="shortSpacer"></div>
         </div>
+        
     </section>
 
     <!-- Javascript -->
@@ -383,7 +376,7 @@
     <script src="js/gltfloader.js"></script>
     <script src="js/spawn.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/chocobo.js"></script>
+    <script src="js/model.js"></script>
 
 </body>
 </html>
